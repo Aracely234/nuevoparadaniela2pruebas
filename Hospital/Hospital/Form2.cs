@@ -32,6 +32,17 @@ namespace Hospital
             pd.Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.tbA2.Text = tbA.Text;
+            f1.tbC2.Text = tbC.Text;
+            f1.tbM2.Text = tbM.Text;
+            f1.tbXo2.Text = tbXo.Text;
+            f1.tbn2.Text = tbn.Text;
+            f1.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (dataGridView1.RowCount > 1)

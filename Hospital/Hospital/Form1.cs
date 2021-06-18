@@ -32,9 +32,6 @@ namespace Hospital
         public static double numeroservicios1=0, numeroservicios2=0, numeroservicios3=0, numeroservicios4=0, numeroservicios5=0, numeroservicios6=0, numeroservicios7=0;
         public static double costoOperacion;
         public static double probabilidadanterior,nuevasuma;
-
-       
-
         public static int nuevasfilas;
         public static double nuevoingresototal;
         public static float nuevospreciosumar;
@@ -55,11 +52,11 @@ namespace Hospital
         
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //double.TryParse(tbA.Text, out a);
-            //double.TryParse(tbC.Text, out c);
-            //double.TryParse(tbXo.Text, out Xo);
-            //double.TryParse(tbM.Text, out M);
-            //double.TryParse(tbn.Text, out n);
+            double.TryParse(tbA2.Text, out a);
+            double.TryParse(tbC2.Text, out c);
+            double.TryParse(tbXo2.Text, out Xo);
+            double.TryParse(tbM2.Text, out M);
+            double.TryParse(tbn2.Text, out n);
             //a = 101;
             //c = 221;
             //Xo = 17;
@@ -128,11 +125,11 @@ namespace Hospital
         }
         public void nocomparar()
         {
-            //double.TryParse(tbA.Text, out a);
-            //double.TryParse(tbC.Text, out c);
-            //double.TryParse(tbXo.Text, out Xo);
-            //double.TryParse(tbM.Text, out M);
-            //double.TryParse(tbn.Text, out n);
+            double.TryParse(tbA2.Text, out a);
+            double.TryParse(tbC2.Text, out c);
+            double.TryParse(tbXo2.Text, out Xo);
+            double.TryParse(tbM2.Text, out M);
+            double.TryParse(tbn2.Text, out n);
             //a = 101;
             //c = 221;
             //Xo = 17;
@@ -400,11 +397,11 @@ namespace Hospital
         }
         public void tablanuevaprimera()
         {
-            //double.TryParse(tbA.Text, out a);
-            //double.TryParse(tbC.Text, out c);
-            //double.TryParse(tbXo.Text, out Xo);
-            //double.TryParse(tbM.Text, out M);
-            //double.TryParse(tbn.Text, out n);
+            double.TryParse(tbA2.Text, out a);
+            double.TryParse(tbC2.Text, out c);
+            double.TryParse(tbXo2.Text, out Xo);
+            double.TryParse(tbM2.Text, out M);
+            double.TryParse(tbn2.Text, out n);
             //a = 101;
             //c = 221;
             //Xo = 17;
@@ -470,11 +467,11 @@ namespace Hospital
         }
         public void nocompararmenosuno()
         {
-            //double.TryParse(tbA.Text, out a);
-            //double.TryParse(tbC.Text, out c);
-            //double.TryParse(tbXo.Text, out Xo);
-            //double.TryParse(tbM.Text, out M);
-            //double.TryParse(tbn.Text, out n);
+            double.TryParse(tbA2.Text, out a);
+            double.TryParse(tbC2.Text, out c);
+            double.TryParse(tbXo2.Text, out Xo);
+            double.TryParse(tbM2.Text, out M);
+            double.TryParse(tbn2.Text, out n);
             //a = 101;
             //c = 221;
             //Xo = 17;
@@ -675,11 +672,11 @@ namespace Hospital
         }
         public void tablanuevasegunda()
         {
-            //double.TryParse(tbA.Text, out a);
-            //double.TryParse(tbC.Text, out c);
-            //double.TryParse(tbXo.Text, out Xo);
-            //double.TryParse(tbM.Text, out M);
-            //double.TryParse(tbn.Text, out n);
+            double.TryParse(tbA2.Text, out a);
+            double.TryParse(tbC2.Text, out c);
+            double.TryParse(tbXo2.Text, out Xo);
+            double.TryParse(tbM2.Text, out M);
+            double.TryParse(tbn2.Text, out n);
             //a = 101;
             //c = 221;
             //Xo = 17;
@@ -748,11 +745,11 @@ namespace Hospital
         }
         public void nocompararmenosdos()
         {
-            //double.TryParse(tbA.Text, out a);
-            //double.TryParse(tbC.Text, out c);
-            //double.TryParse(tbXo.Text, out Xo);
-            //double.TryParse(tbM.Text, out M);
-            //double.TryParse(tbn.Text, out n);
+            double.TryParse(tbA2.Text, out a);
+            double.TryParse(tbC2.Text, out c);
+            double.TryParse(tbXo2.Text, out Xo);
+            double.TryParse(tbM2.Text, out M);
+            double.TryParse(tbn2.Text, out n);
             //a = 101;
             //c = 221;
             //Xo = 17;
@@ -886,6 +883,59 @@ namespace Hospital
             else
             {
                 labelresultado.Text = "El costo de operacion no es optimo";
+            }
+        }
+        //validaciones-------------------------------------------------------------------------
+        private void tbnA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten letras.");
+            }
+            if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten espacios.");
+            }
+        }
+        private void tbnB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten letras.");
+            }
+            if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten espacios.");
+            }
+        }
+        private void tbnC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten letras.");
+            }
+            if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten espacios.");
+            }
+        }
+        private void txCostoOpera_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten letras.");
+            }
+            if (Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten espacios.");
             }
         }
         public Form1()

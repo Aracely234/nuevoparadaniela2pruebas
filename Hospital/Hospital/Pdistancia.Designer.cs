@@ -122,7 +122,7 @@ namespace Hospital
             // Lsuperior
             // 
             this.Lsuperior.AutoSize = true;
-            this.Lsuperior.Location = new System.Drawing.Point(3, 197);
+            this.Lsuperior.Location = new System.Drawing.Point(18, 197);
             this.Lsuperior.Name = "Lsuperior";
             this.Lsuperior.Size = new System.Drawing.Size(77, 13);
             this.Lsuperior.TabIndex = 26;
@@ -131,7 +131,7 @@ namespace Hospital
             // limInf
             // 
             this.limInf.AutoSize = true;
-            this.limInf.Location = new System.Drawing.Point(3, 158);
+            this.limInf.Location = new System.Drawing.Point(18, 151);
             this.limInf.Name = "limInf";
             this.limInf.Size = new System.Drawing.Size(71, 13);
             this.limInf.TabIndex = 25;
@@ -151,7 +151,7 @@ namespace Hospital
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numero,
             this.ps});
-            this.dataGridView3.Location = new System.Drawing.Point(682, 346);
+            this.dataGridView3.Location = new System.Drawing.Point(535, 346);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(203, 124);
             this.dataGridView3.TabIndex = 23;
